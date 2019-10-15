@@ -6,7 +6,7 @@ window.onload = function (e) {
 
 function initializeApp(data) {
     // get profile call
-    document.getElementById('displaynamefield').textContent = data.profile.displayName;
+    document.getElementById('displaynamefield').textContent = data.context.profile.displayName;
 
     /*document.getElementById('getprofilebutton').addEventListener('click', function () {
         liff.getProfile().then(function (profile) {
