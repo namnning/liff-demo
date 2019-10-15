@@ -43,10 +43,3 @@ img {
 button {
     margin: 4px;
 }
-
-.bgimg {
-    background-image: url('pic1.jpg');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-  }
