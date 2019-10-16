@@ -17,7 +17,7 @@ function initializeApp(data) {
             img.src = profile.pictureUrl;
             img.alt = "Profile Picture";
             profilePictureDiv.appendChild(img);
-    }
+    })
     /*document.getElementById('getprofilebutton').addEventListener('click', function () {
         liff.getProfile().then(function (profile) {
             document.getElementById('useridprofilefield').textContent = profile.userId;
