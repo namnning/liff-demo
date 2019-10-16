@@ -8,7 +8,15 @@ function initializeApp(data) {
     // get profile call
     //document.getElementById('displaynamefield').textContent = data.context.profile.displayName;
     liff.getProfile().then(function (profile) {
-    document.getElementById('useridprofilefield').textContent = profile.userId;
+        //document.getElementById('useridprofilefield').textContent = profile.userId;
+        const profilePictureDiv = document.getElementById('profilepicturediv');
+            if (profilePictureDiv.firstElementChild) {
+                profilePictureDiv.removeChild(profilePictureDiv.firstElementChild);
+            }
+            const img = document.createElement('img');
+            img.src = profile.pictureUrl;
+            img.alt = "Profile Picture";
+            profilePictureDiv.appendChild(img);
     }
     /*document.getElementById('getprofilebutton').addEventListener('click', function () {
         liff.getProfile().then(function (profile) {
