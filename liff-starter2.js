@@ -9,6 +9,7 @@ function initializeApp(data) {
     //document.getElementById('displaynamefield').textContent = data.context.profile.displayName;
     liff.getProfile().then(function (profile) {
         //document.getElementById('useridprofilefield').textContent = profile.userId;
+        document.getElementById('displaynamefield').textContent = profile.displayName;
         const profilePictureDiv = document.getElementById('profilepicturediv');
             if (profilePictureDiv.firstElementChild) {
                 profilePictureDiv.removeChild(profilePictureDiv.firstElementChild);
